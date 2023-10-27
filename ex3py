@@ -1,0 +1,19 @@
+# faça um programa que peça o nome de 5 pessoas e adiciona os nome em uma lista. 
+# faça o usuário escolher uma posição e um novo membro para a lista e adicione esse novo membro na posição escolhida pelo usuário (use insert):
+
+
+listaPessoas=[]
+
+for n in range (5):
+    nomes = str(input(f"Digite o nome da pessoa: "))
+    
+    listaPessoas.append(nomes)
+
+
+print(listaPessoas)
+
+posicao = int(input("Digite uma posição na lista: "))
+nomeExtra = str(input("Digite o novo nome:"))
+
+listaPessoas.insert(posicao, nomeExtra)
+print(listaPessoas)
